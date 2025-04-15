@@ -15,7 +15,7 @@ while True:
         if full_url.status_code == 404: # нашел ли страницу
             print("Error: Not Found")
         elif full_url.status_code == 200: # есть ли коннект
-            print("Success:", full_url.json())
+            print("Success:")
         elif base_url.status_code == 401: # коннект с апи
             print("Unauthorized")
         try:
